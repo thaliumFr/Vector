@@ -96,10 +96,3 @@ class Vector2:
     @staticmethod
     def one():
         return Vector2(1, 1)
-
-
-if __name__ == "__main__":
-    A = Vector2(0, 1)
-    B = Vector2(3, 0)
-
-    print(Vector2.Angle(A, B))

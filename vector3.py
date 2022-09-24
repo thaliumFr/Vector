@@ -71,8 +71,6 @@ class Vector3:
 
     @staticmethod
     def MoveTowards(va: 'Vector3', vb: 'Vector3', maxDistanceDelta: float) -> 'Vector3':
-        '''Lerp between vector A and vector B
-        \nt represents the percentage clamped between 0 and 1'''
         return va + (vb - va) * maxDistanceDelta
 
     @staticmethod
@@ -106,10 +104,3 @@ class Vector3:
     @staticmethod
     def one():
         return Vector3(1, 1, 1)
-
-
-if __name__ == "__main__":
-    A = Vector3(0, 1, 0)
-    B = Vector3(3, 0, 3)
-
-    print(Vector3.Angle(A, B))
